@@ -1,0 +1,372 @@
+[
+    {
+        "id": "illapa_pg_caius_mk2",
+        "name": "Caius Assault Rifle MKII",
+        "type": "Weapon",
+        "description": "An upgraded assault rifle.<br>Originally found in an abandonned UN blacksite.",
+        "tags": [
+            {
+                "id": "illapa_tg_loading",
+                "val": 3
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 8
+            }
+        ],
+        "damage": [
+            {
+                "type": "energy",
+                "val": "2"
+            }
+        ]
+    },
+    {
+        "id": "illapa_pg_sniper",
+        "name": "Sniper Rifle",
+        "type": "Weapon",
+        "description": "A standard-issue energy sniper rifle.",
+        "tags": [
+            {
+                "id": "illapa_tg_loading",
+                "val": 2
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 20
+            }
+        ],
+        "damage": [
+            {
+                "type": "energy",
+                "val": "2"
+            }
+        ]
+    },
+    {
+        "id": "illapa_pg_shotgun",
+        "name": "Breaching Shotgun",
+        "type": "Weapon",
+        "description": "A short-range energy weapon for those close quarter fights.",
+        "tags": [
+            {
+                "id": "tg_loading"
+            },
+            {
+                "id": "tg_reliable",
+                "val": 1
+            },
+            {
+                "id": "illapa_tg_breach",
+                "val": 1
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 3
+            }
+        ],
+        "damage": [
+            {
+                "type": "energy",
+                "val": "2"
+            }
+        ]
+    },
+    {
+        "id": "illapa_pg_plasma_grenades",
+        "name": "Plasma Grenades",
+        "type": "Gear",
+        "description": "Expend a charge for the following effect:<ul><li><b>Plasma Grenade</b> (Grenade, Range 3, Blast 2): Affected characters must succeed on an Agility save or take 3 Energy damage.</li></ul>",
+        "actions": [
+            {
+                "name": "Use Plasma Grenade",
+                "activation": "Quick",
+                "range": [
+                    {
+                        "type": "Range",
+                        "val": 3
+                    },
+                    {
+                        "type": "Blast",
+                        "val": 2
+                    }
+                ],
+                "damage": [
+                    {
+                        "type": "Energy",
+                        "val": 3
+                    }
+                ],
+                "detail": "Throw a grenade within Range 3. Affected characters must succeed on an Agility save or take 3 Energy damage.",
+                "pilot": true
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 2
+            }
+        ]
+    },
+    {
+        "id": "illapa_pg_ballistic_shield",
+        "name": "Ballistic Shield",
+        "type": "Gear",
+        "description": "During their turn, the bearer of this shield can select 2 adjacent hex edges (or 1 square edge) belonging to their current tile.<br>All incoming pilot attacks whose trajectory intersects these edges receive 1 Difficulty. This is ignored by weapons with the Arcing tag.",
+        "tags": [
+            {
+                "id": "illapa_tg_encumbrance",
+                "val": 1
+            }
+        ],
+        "bonuses": [
+            {
+                "id": "pilot_speed",
+                "val": -1
+            }
+        ]
+    },
+    {
+        "id": "illapa_pg_slime_in_a_jar",
+        "name": "Slime-in-a-jar",
+        "type": "Gear",
+        "description": "Solid jar containing 1 rock slime. The slime can be deployed for the following effect:<ul><li><b>Rock Slime</b>: repairs broken equipment, technicals and mechs. If used on a technical or mech, the slime can bring it back to working order and heal it for 2 HP; the affected piece of equipment then receives the Slime tag.<br>Has no effect on equipment with the Slime tag.</li></ul>",
+        "tags": [
+            {
+                "id": "illapa_tg_encumbrance",
+                "val": 1
+            },
+            {
+                "id": "tg_limited",
+                "val": 1
+            }
+        ],
+        "deployables": [
+            {
+                "name": "Rock Slime",
+                "activation": "Quick",
+                "type": "Slime",
+                "range": [
+                    {
+                        "type": "Threat",
+                        "val": 1
+                    }
+                ],
+                "detail": "Repairs broken equipment, technicals and mechs. If used on a technical or mech, the slime can bring it back to working order and heal it for 2 HP; the affected piece of equipment then receives the Slime tag.<br>Has no effect on equipment with the Slime tag.",
+                "pilot": true,
+                "tags": [
+                    {
+                        "id": "illapa_tg_slime"
+                    }
+                ]
+            }
+        ],
+        "bonuses": [
+            {
+                "id": "pilot_speed",
+                "val": -1
+            }
+        ]
+    },
+    {
+        "id": "illapa_pg_lcs_communication_system",
+        "name": "LCS Communication System",
+        "type": "Gear",
+        "description": "Laser Communication system that works even under CAAD. Allows for communication with any other user, ship or mech connected to the same network. May not work in building interiors.<br>Should connection be completetly lost, a DC7 Systems or Engineering check is required to reconnect.",
+        "tags": [
+            {
+                "id": "illapa_tg_encumbrance",
+                "val": 1
+            }
+        ],
+        "bonuses": [
+            {
+                "id": "pilot_speed",
+                "val": -1
+            }
+        ]
+    },
+    {
+        "id": "illapa_pg_slime_backpack",
+        "name": "Portable Slime Backpack",
+        "type": "Gear",
+        "description": "A backpack containing two slimes which have been taught to transform at the cost of a full action into various shapes such as that of glider.",
+        "tags": [
+            {
+                "id": "illapa_tg_encumbrance",
+                "val": 2
+            }
+        ],
+        "bonuses": [
+            {
+                "id": "pilot_speed",
+                "val": -2
+            }
+        ]
+    },
+    {
+        "id": "illapa_pg_trolley",
+        "name": "Self-Propelled Trolley",
+        "type": "Gear",
+        "description": "Self-proppeled trolley can be used to carry more items... or to ride it. It costs 1 full action to get out of the trolley and then use any gear item. You guys should stop looting this much. Does not stack. CURRENTLY NOT IN STOCK.",
+        "tags": [
+            {
+                "id": "illapa_tg_encumbrance",
+                "val": 2
+            }
+        ],
+        "bonuses": [
+            {
+                "id": "pilot_speed",
+                "val": 2
+            }
+        ]
+    },
+    {
+        "id": "illapa_pg_medusa_mask",
+        "name": "Medusa Mask",
+        "type": "Gear",
+        "description": "A medusa mask which prevents onlookers from directly looking at the wearer's face. Does not make the wearer invisible, although there is a tendency not to look at them unless they stand out."
+    },
+    {
+        "id": "illapa_pg_golden_slime",
+        "name": "Golden Slime",
+        "type": "Gear",
+        "description": "A Golden slime in a self-propelled trolley containement device. Use a full action to apply it to any surface and the slime will generate a hole on the following turn. Cannot be used with another self-propelled trolley."
+    },
+    {
+        "id": "illapa_npcf_assault_rifle",
+        "name": "NOVYY KALASHNIKOV",
+        "type": "Weapon",
+        "tags": [
+            {
+                "id": "illapa_tg_loot"
+            }
+        ],
+        "damage": [
+            {
+                "type": "Energy",
+                "val": 2
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            }
+        ]
+    },
+    {
+        "id": "illapa_npcf_combat_knife",
+        "name": "KIZLYAR",
+        "type": "Weapon",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "val": 1
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_sidearm"
+            },
+            {
+                "id": "illapa_tg_loot"
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "illapa_npcf_jutsu",
+        "name": "JUTSU",
+        "type": "Weapon",
+        "tags": [
+            {
+                "id": "tg_sidearm"
+            },
+            {
+                "id": "illapa_tg_loot"
+            }
+        ],
+        "damage": [
+            {
+                "type": "Energy",
+                "val": 2
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 4
+            }
+        ]
+    },
+    {
+        "id": "illapa_npcf_ora",
+        "name": "ORA BOLT RIFLE",
+        "type": "Weapon",
+        "tags": [
+            {
+                "id": "illapa_tg_loading",
+                "val": 1
+            },
+            {
+                "id": "illapa_tg_encumbrance",
+                "val": 1
+            },
+            {
+                "id": "illapa_tg_loot"
+            }
+        ],
+        "damage": [
+            {
+                "type": "Energy",
+                "val": 4
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            }
+        ],
+        "bonuses": [
+            {
+                "id": "pilot_speed",
+                "val": -1
+            }
+        ]
+    },
+    {
+        "id": "illapa_pg_rocket_launcher",
+        "name": "Unknown Manufacturer Rocket Launcher",
+        "type": "Weapon",
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            },
+            {
+                "type": "Blast",
+                "val": 1
+            }
+        ],
+        "damage": [
+            {
+                "type": "Explosive",
+                "val": 4
+            }
+        ]
+    }
+]

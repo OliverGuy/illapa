@@ -1,0 +1,27 @@
+[
+    {
+        "id": "illapa_tg_loading",
+        "name": "Loading {VAL}",
+        "description": "This weapon must be reloaded after every {VAL} uses."
+    },
+    {
+        "id": "illapa_tg_breach",
+        "name": "Breach {VAL}",
+        "description": "This weapon can be used to breach a weak wall or a door from {VAL} space(s) away."
+    },
+    {
+        "id": "illapa_tg_slime",
+        "name": "Slime",
+        "description": "This piece of equipment has been modified by a slime, altering the behaviour of slime abilities cast on it."
+    },
+    {
+        "id": "illapa_tg_encumbrance",
+        "name": "Encumbrance {VAL}",
+        "description": "This piece of equipment is so large or heavy that it decreases the bearer's movement speed by {VAL} spaces."
+    },
+    {
+        "id": "illapa_tg_loot",
+        "name": "Loot",
+        "description": "This piece of equipment needs to be looted from an enemy before you can equip it."
+    }
+]
