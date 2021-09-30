@@ -20,6 +20,16 @@
         "description": "This piece of equipment is so large or heavy that it decreases the bearer's movement speed by {VAL} spaces."
     },
     {
+        "id": "illapa_tg_concealed",
+        "name": "Concealed",
+        "description": "This piece of equipment can be concealed, and will not show up in metel detectors or other scanners. A full body-check could still reveal it though."
+    },
+    {
+        "id": "illapa_tg_geneva",
+        "name": "Geneva Suggestions",
+        "description": "This piece of equipment breaks the Geneva conventions... You monster."
+    },
+    {
         "id": "illapa_tg_loot",
         "name": "Loot",
         "description": "This piece of equipment needs to be looted from an enemy before you can equip it."

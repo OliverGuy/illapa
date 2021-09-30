@@ -24,10 +24,34 @@
         ]
     },
     {
-        "id": "illapa_pg_sniper",
-        "name": "Sniper Rifle",
+        "id": "illapa_pg_k9_smartgun",
+        "name": "K9 Smart Gun",
         "type": "Weapon",
-        "description": "A standard-issue energy sniper rifle.",
+        "description": "Manufactured by 07 industries, this smart gun can fire bullets that follow user-inputed trajectories.",
+        "tags": [
+            {
+                "id": "illapa_tg_loading",
+                "val": 3
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            }
+        ],
+        "damage": [
+            {
+                "type": "kinetic",
+                "val": "2"
+            }
+        ]
+    },
+    {
+        "id": "illapa_pg_sniper",
+        "name": "Pavlichenko Sniper Rifle",
+        "type": "Weapon",
+        "description": "A standard-issue neorus energy sniper rifle. A notice on the side says: Небольшой риск возгорания при охлаждении магазина при перезарядке",
         "tags": [
             {
                 "id": "illapa_tg_loading",
@@ -49,9 +73,9 @@
     },
     {
         "id": "illapa_pg_shotgun",
-        "name": "Breaching Shotgun",
+        "name": "Ushkuyniks Breaching Shotgun",
         "type": "Weapon",
-        "description": "A short-range energy weapon for those close quarter fights.",
+        "description": "A short-range energy weapon for those close quarter fights. Capable of obliterating obstacles and enemies alike",
         "tags": [
             {
                 "id": "tg_loading"
@@ -80,9 +104,9 @@
     },
     {
         "id": "illapa_pg_plasma_grenades",
-        "name": "Plasma Grenades",
+        "name": "Icarus Plasma Grenades",
         "type": "Gear",
-        "description": "Expend a charge for the following effect:<ul><li><b>Plasma Grenade</b> (Grenade, Range 3, Blast 2): Affected characters must succeed on an Agility save or take 3 Energy damage.</li></ul>",
+        "description": "Grenade in use by UN expeditionary forces. Expend a charge for the following effect:<ul><li><b>Plasma Grenade</b> (Grenade, Range 3, Blast 2): Affected characters must succeed on an Agility save or take 3 Energy damage.</li></ul>",
         "actions": [
             {
                 "name": "Use Plasma Grenade",
@@ -115,8 +139,83 @@
         ]
     },
     {
+        "id": "illapa_pg_16_grenades",
+        "name": "Babel 16 Grenade",
+        "type": "Gear",
+        "description": "Grenade employing Babel-16 instances to cause visual and audio memetic damage. Expend a charge for the following effect:<ul><li><b>16 Grenade</b> (Grenade, Range 3, Blast 4): ALL affected characters must succeed on an System save or take 3 memetic damage and be IMPAIRED for a turn.</li></ul>",
+        "actions": [
+            {
+                "name": "Use 16 Grenade",
+                "activation": "Quick",
+                "range": [
+                    {
+                        "type": "Range",
+                        "val": 3
+                    },
+                    {
+                        "type": "Blast",
+                        "val": 4
+                    }
+                ],
+                "damage": [
+                    {
+                        "type": "Energy",
+                        "val": 3
+                    }
+                ],
+                "detail": "Throw a grenade within Range 3. Affected characters must succeed on an Agility save or take 3 Memetic damage and be IMPAIRED for a turn (written as Energy here).",
+                "pilot": true
+            }
+        ],
+        "tags": [
+	    {
+                "id": "illapa_tg_geneva"
+            },
+            {
+                "id": "tg_limited",
+                "val": 3
+            }
+        ]
+    },
+    {
+        "id": "illapa_pg_smart_grenades",
+        "name": "T05 Bullet Grenades",
+        "type": "Gear",
+        "description": "Smart grenade manufactured by the 07 Industries in the Robotic League. Expend a charge for the following effect:<ul><li><b>Plasma Grenade</b> (Grenade, Range 3, Blast 4): Choose 1 character within Blast radius, they must succeed on an Agility save or take 4 Kinetic damage. Has no effet on mechs.</li></ul>",
+        "actions": [
+            {
+                "name": "Use T05 Grenade",
+                "activation": "Quick",
+                "range": [
+                    {
+                        "type": "Range",
+                        "val": 4
+                    },
+                    {
+                        "type": "Blast",
+                        "val": 3
+                    }
+                ],
+                "damage": [
+                    {
+                        "type": "Kinetic",
+                        "val": 4
+                    }
+                ],
+                "detail": "Throw a grenade within Range 4. Chooe 1 character in Blast 3, they must succeed on an Agility save or take 4 Kinetic damage. Has no effet on mechs.",
+                "pilot": true
+            }
+        ],
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 2
+            }
+        ]
+    },
+    {
         "id": "illapa_pg_ballistic_shield",
-        "name": "Ballistic Shield",
+        "name": "Krepost Ballistic Shield",
         "type": "Gear",
         "description": "During their turn, the bearer of this shield can select 2 adjacent hex edges (or 1 square edge) belonging to their current tile.<br>All incoming pilot attacks whose trajectory intersects these edges receive 1 Difficulty. This is ignored by weapons with the Arcing tag.",
         "tags": [
@@ -244,6 +343,7 @@
         "id": "illapa_npcf_assault_rifle",
         "name": "NOVYY KALASHNIKOV",
         "type": "Weapon",
+	"description": "A new take on an old classic, the novyy is a efficient rifle manufactured by the New Soviet Union.",
         "tags": [
             {
                 "id": "illapa_tg_loot"
@@ -266,9 +366,10 @@
         "id": "illapa_npcf_combat_knife",
         "name": "KIZLYAR",
         "type": "Weapon",
+        "description": "A new take on an old classic, the novyy is a efficient rifle manufactured by the New Soviet Union.",
         "damage": [
             {
-                "type": "Kinetic",
+                "type": "Energy",
                 "val": 1
             }
         ],
@@ -278,7 +379,10 @@
             },
             {
                 "id": "illapa_tg_loot"
-            }
+            },
+	    {
+		"id" : "illapa_tg_concealed"
+	    }
         ],
         "range": [
             {
@@ -288,21 +392,22 @@
         ]
     },
     {
-        "id": "illapa_npcf_jutsu",
-        "name": "JUTSU",
+        "id": "illapa_npcf_milyy_stalin",
+        "name": "MILYY STALIN",
         "type": "Weapon",
+	"description": "Easily concealed handgun manufactured by the New Soviet Union, named after the famous anime girl which lead the union in the great patriotic war (according to all surviving records).",
         "tags": [
             {
                 "id": "tg_sidearm"
             },
-            {
-                "id": "illapa_tg_loot"
-            }
+	    {
+		"id" : "illapa_tg_concealed"
+	    }
         ],
         "damage": [
             {
                 "type": "Energy",
-                "val": 2
+                "val": 1
             }
         ],
         "range": [
@@ -313,9 +418,43 @@
         ]
     },
     {
+        "id": "illapa_npcf_jutsu",
+        "name": "JUTSU",
+        "type": "Weapon",
+	"description": "An armour guild sidearm akin to the dominator of the ancient legend, Psycho Pass.",
+        "tags": [
+            {
+                "id": "tg_sidearm"
+            },
+            {
+                "id": "illapa_tg_loot"
+            },
+	    {
+                "id": "illapa_tg_loading",
+		"val" : 1
+            },
+	    {
+		"id" : "illapa_tg_concealed"
+	    }
+        ],
+        "damage": [
+            {
+                "type": "Energy",
+                "val": 2
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            }
+        ]
+    },
+    {
         "id": "illapa_npcf_ora",
         "name": "ORA BOLT RIFLE",
         "type": "Weapon",
+	"description": "Huge gun of wapanese design by an unknown manufacturer related to the armour guild.",
         "tags": [
             {
                 "id": "illapa_tg_loading",
