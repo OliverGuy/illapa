@@ -366,16 +366,20 @@
         "id": "illapa_npcf_combat_knife",
         "name": "KIZLYAR",
         "type": "Weapon",
-        "description": "A new take on an old classic, the novyy is a efficient rifle manufactured by the New Soviet Union.",
+        "description": "New Soviet Union plasma cutter knife, can be used to roast bratwurst or enemy faces.",
         "damage": [
             {
                 "type": "Energy",
-                "val": 1
+                "val": 2
             }
         ],
         "tags": [
             {
                 "id": "tg_sidearm"
+            },
+	    {
+                "id": "illapa_tg_loading",
+		"val" : 1
             },
             {
                 "id": "illapa_tg_loot"
