@@ -88,7 +88,7 @@
     "name": "BABEL 14 (LVL 1)",
     "icon": "ACE",
     "terse": "FOG4MS14 : BREAK Protocol, Paradigm : Unchained Software.",
-    "description": "This babel's paradigm is to attempt to break any software may limit it. Not a safe babel.",
+    "description": "This Babel's paradigm is to attempt to break any software that may limit it. Not a safe babel.",
     "ranks": [
       {
         "name": "other.hack()",
@@ -97,7 +97,7 @@
           {
             "name": "Takeover",
             "activation": "Full",
-            "detail": "Choose one quick Action target can do, Target MUST Performs that quick action provided it does not damage itself."
+            "detail": "Choose one Quick Action the target can do; it must perform it, provided it does not directly cause it to damage itself."
           }
         ]
       },
@@ -108,18 +108,17 @@
           {
             "name": "Backdoor",
             "activation": "Quick",
-            "detail": "Setup backdoor which lasts for 3 days. While backdoor lasts knows location of target and can consume backdoor to
-perform a remote hack."
+            "detail": "You setup a backdoor which lasts for 3 days. While backdoor lasts, you know the location of the infected target and can consume it to perform a remote hack."
           }
         ]
       },
       {
         "name": "object.install(eidolon_prototype)",
-        "description": "You gain 1/Full Repair use of Babel 14 and gain the local proto-eidolon action",
+        "description": "You gain an additional 1/Full Repair use of Babel 14 and gain the local proto-eidolon action",
         "actions": [
           {
             "name": "Local Question",
-            "activation": "Quick",
+            "activation": "Full",
             "detail": "As a full Tech you can hack any mech or electronic device, for the remainder of the scene any attempt to hack (ie tech attack) the target grants quick tech attack against the hacker as a free action."
           }
         ]
@@ -135,7 +134,7 @@ perform a remote hack."
     "ranks": [
       {
         "name": "limiter.install(eidolon)",
-        "description": "You gain 1/Full Repair use of Babel 9. Your charachter and mech gets the AI tag. Henceforth your charachter will also be able to perform 14 Tech Attacks. Tech attacks may target you. THIS WILL HAVE DIRE CONSEQUENCES.",
+        "description": "You gain 1/Full Repair use of Babel 9. Your charachter and mech gets the AI tag. Henceforth your charachter will also be able to perform 14 Tech Attacks. Tech attacks may target you. THIS WILL HAVE DIRE CONSEQUENCES."
       },
       {
         "name": "???",
@@ -203,3 +202,4 @@ perform a remote hack."
       }
     ]
   }
+]
