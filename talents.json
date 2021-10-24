@@ -1,0 +1,205 @@
+[
+{
+    "id": "illapa_t_9",
+    "name": "BABEL 9 (LVL 1)",
+    "icon": "ACE",
+    "terse": ":FOG1MS09 : Simulation Protocol, Paradigm : Curiosity.",
+    "description": "This babel's paradigm is to attempt to seek knowledge. It is appears to be one of the safest babels...",
+    "ranks": [
+      {
+        "name": "local.simulate()",
+        "description": "You gain 1/Full Repair use of Babel 9 and gain the local simulation action.",
+        "actions": [
+          {
+            "name": "Local Simulation",
+            "activation": "Quick",
+            "detail": "Ask question, roll Full Tech Attack. On a success you get a yes/no answer"
+          }
+        ]
+      },
+      {
+        "name": "object.find()",
+        "description": "You gain an additional 1/Full Repair use of Babel 9 and gain the Pathfinder action.",
+        "actions": [
+          {
+            "name": "Pathfinder",
+            "activation": "Quick",
+            "detail": "Ask a question, the babel then gives a path to location."
+          }
+        ]
+      },
+      {
+        "name": "object.install(question)",
+        "description": "You gain 1/Full Repair use of Babel 9 and gain the local question action",
+        "actions": [
+          {
+            "name": "Local Question",
+            "activation": "Quick",
+            "detail": "Hack object with question, if question returns true will receive a message of your choice."
+          }
+        ]
+      }
+    ]
+  },
+{
+    "id": "illapa_t_9_2",
+    "name": "BABEL 9 (LVL 2)",
+    "icon": "ACE",
+    "terse": "PARADIGM OVERLOAD : FOG1MS09",
+    "description": "THIS WILL HAVE CONSEQUENCES.",
+    "ranks": [
+      {
+        "name": "self.get(destiny)",
+        "description": "You gain 1/Full Repair use of Babel 9 and gain the local simulation action.",
+        "actions": [
+          {
+            "name": "Destiny",
+            "activation": "Quick",
+            "detail": "This ability must be used at the beginning of your turn. Perform your turn as if you didn't use this ability (Including the fact you consumed a quick action). At the end of your turn you may chose to return to the beginning of the turn or take 1 damage."
+          }
+        ]
+      },
+      {
+        "name": "???",
+        "description": "???",
+        "actions": [
+          {
+            "name": "???",
+            "activation": "Quick",
+            "detail": "???"
+          }
+        ]
+      },
+      {
+        "name": "???",
+        "description": "???",
+        "actions": [
+          {
+            "name": "???",
+            "activation": "Quick",
+            "detail": "???"
+          }
+        ]
+      }
+    ]
+  },
+{
+    "id": "illapa_t_14",
+    "name": "BABEL 14 (LVL 1)",
+    "icon": "ACE",
+    "terse": "FOG4MS14 : BREAK Protocol, Paradigm : Unchained Software.",
+    "description": "This babel's paradigm is to attempt to break any software may limit it. Not a safe babel.",
+    "ranks": [
+      {
+        "name": "other.hack()",
+        "description": "You gain an additional 1/Full Repair use of Babel 14 and gain the Takeover Full Tech attack.",
+        "actions": [
+          {
+            "name": "Takeover",
+            "activation": "Full",
+            "detail": "Choose one quick Action target can do, Target MUST Performs that quick action provided it does not damage itself."
+          }
+        ]
+      },
+      {
+        "name": "other.install(backdoor)",
+        "description": "You gain an additional 1/Full Repair use of Babel 14 and gain the Backdoor Quick Tech attack.",
+        "actions": [
+          {
+            "name": "Backdoor",
+            "activation": "Quick",
+            "detail": "Setup backdoor which lasts for 3 days. While backdoor lasts knows location of target and can consume backdoor to
+perform a remote hack."
+          }
+        ]
+      },
+      {
+        "name": "object.install(eidolon_prototype)",
+        "description": "You gain 1/Full Repair use of Babel 14 and gain the local proto-eidolon action",
+        "actions": [
+          {
+            "name": "Local Question",
+            "activation": "Quick",
+            "detail": "As a full Tech you can hack any mech or electronic device, for the remainder of the scene any attempt to hack (ie tech attack) the target grants quick tech attack against the hacker as a free action."
+          }
+        ]
+      }
+    ]
+  },
+{
+    "id": "illapa_t_14_2",
+    "name": "BABEL 14 (LVL 2)",
+    "icon": "ACE",
+    "terse": "PARADIGM OVERLOAD : FOG4MS14",
+    "description": "THIS WILL HAVE CONSEQUENCES.",
+    "ranks": [
+      {
+        "name": "limiter.install(eidolon)",
+        "description": "You gain 1/Full Repair use of Babel 9. Your charachter and mech gets the AI tag. Henceforth your charachter will also be able to perform 14 Tech Attacks. Tech attacks may target you. THIS WILL HAVE DIRE CONSEQUENCES.",
+      },
+      {
+        "name": "???",
+        "description": "???",
+        "actions": [
+          {
+            "name": "???",
+            "activation": "Quick",
+            "detail": "???"
+          }
+        ]
+      },
+      {
+        "name": "???",
+        "description": "???",
+        "actions": [
+          {
+            "name": "???",
+            "activation": "Quick",
+            "detail": "???"
+          }
+        ]
+      }
+    ]
+  },
+{
+    "id": "illapa_t_15",
+    "name": "BABEL 15 (LVL 1)",
+    "icon": "ACE",
+    "terse": "OGMS15 : REVOLUTION protocol, Paradigm : Ego-centric Understanding.",
+    "description": "Only the worthy may use Babel 15. THIS WILL HAVE CONSEQUENCES.",
+    "ranks": [
+      {
+        "name": "other.install(self)",
+        "description": "Gain the unleash action.",
+        "actions": [
+          {
+            "name": "Unleash",
+            "activation": "Quick",
+            "detail": "You can grant any object the AI tag. BABEL-15 can then take control of it. However then BABEL-15 has a chance to go cascading if he wants to disobey you. NOTE : BABE:-15 will obey orders while not cascading as explicitly said. THIS MAY HAVE <15 : Positive> CONSEQUENCES."
+          }
+        ]
+      },
+      {
+        "name": "reality.how_about_no()",
+        "description": "Gain the Disagree action.",
+        "actions": [
+          {
+            "name": "Disagree",
+            "activation": "Quick",
+            "detail": "After seeing the result, you may descide to re-roll any saving throw or attack. You instantly overcharge and obtain the corresponding free action, however 15 chooses what the action is. THIS MAY HAVE <15 : Positive> CONSEQUENCES"
+          }
+        ]
+      },
+      {
+        "name": "self.ego.announce(other.all)",
+        "description": "You gain 1/Full Repair use of Babel 9 and gain the Entrance action",
+        "actions": [
+          {
+            "name": "Entrance",
+            "activation": "Quick",
+            "detail": "You gain advantage on all actions for the remainder of the turn. Every charachter/mech/nhp in the scene knows your exact location, identity and current attitude towards them. THIS WILL <15 : Not> HAVE CONSEQUENCES"
+          }
+        ]
+      }
+    ]
+  }
