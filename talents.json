@@ -1,5 +1,5 @@
 [
-{
+  {
     "id": "illapa_t_9",
     "name": "BABEL 9 (LVL 1)",
     "icon": "ACE",
@@ -14,6 +14,15 @@
             "name": "Local Simulation",
             "activation": "Quick",
             "detail": "Ask question, roll Full Tech Attack. On a success you get a yes/no answer"
+          }
+        ],
+        "counters": [
+          {
+            "id": "ctr_babel_9",
+            "name": "BABEL 9 USES",
+            "default_value": 0,
+            "min": 0,
+            "max": 6
           }
         ]
       },
@@ -41,7 +50,7 @@
       }
     ]
   },
-{
+  {
     "id": "illapa_t_9_2",
     "name": "BABEL 9 (LVL 2)",
     "icon": "ACE",
@@ -83,7 +92,7 @@
       }
     ]
   },
-{
+  {
     "id": "illapa_t_14",
     "name": "BABEL 14 (LVL 1)",
     "icon": "ACE",
@@ -98,6 +107,15 @@
             "name": "Takeover",
             "activation": "Full",
             "detail": "Choose one Quick Action the target can do; it must perform it, provided it does not directly cause it to damage itself."
+          }
+        ],
+        "counters": [
+          {
+            "id": "ctr_babel_14",
+            "name": "BABEL 14 USES",
+            "default_value": 0,
+            "min": 0,
+            "max": 6
           }
         ]
       },
@@ -125,7 +143,7 @@
       }
     ]
   },
-{
+  {
     "id": "illapa_t_14_2",
     "name": "BABEL 14 (LVL 2)",
     "icon": "ACE",
@@ -160,7 +178,7 @@
       }
     ]
   },
-{
+  {
     "id": "illapa_t_15",
     "name": "BABEL 15 (LVL 1)",
     "icon": "ACE",
